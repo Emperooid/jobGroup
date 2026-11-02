@@ -9,7 +9,7 @@
   --body:"DM Sans",system-ui,sans-serif;
 }
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth;scroll-padding-top:76px}
+html{color-scheme:only light;scroll-behavior:smooth;scroll-padding-top:76px}
 body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit}
 img,svg{display:block}
@@ -99,7 +99,10 @@ h2{font-size:clamp(2rem,4.2vw,3.1rem);font-weight:800}
 .steps-mini{list-style:none;padding:0;margin-top:2rem;display:grid;gap:.8rem}
 .steps-mini li{display:flex;align-items:center;gap:.9rem;font-weight:500}
 .steps-mini b{width:34px;height:34px;border-radius:50%;background:var(--ink);color:var(--yellow);display:grid;place-items:center;font:800 1rem var(--display);flex:none}
-.post .lead.dark{color:#3d3a1e}
+.post h2{color:var(--ink)}
+.post .lead.dark{color:#4a2c12;font-weight:500}
+.post .eyebrow.dark{color:#4a2c12}
+.post .steps-mini li{color:#4a2c12}
 .composer{background:var(--ink);color:#fff;border-radius:26px;padding:clamp(1.3rem,3vw,2rem);display:grid;gap:1rem;box-shadow:12px 12px 0 var(--ink-3),0 30px 60px -20px rgba(0,0,0,.4)}
 .field label{display:block;font-weight:700;font-size:.88rem;margin-bottom:.35rem}
 .field label span{font-weight:400;color:#9c9884}
