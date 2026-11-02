@@ -9,7 +9,8 @@
   --body:"DM Sans",system-ui,sans-serif;
 }
 *{box-sizing:border-box;margin:0}
-html{color-scheme:only light;scroll-behavior:smooth;scroll-padding-top:76px}
+:root{color-scheme:only light}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
 body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit}
 img,svg{display:block}
