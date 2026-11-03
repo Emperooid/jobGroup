@@ -28,8 +28,9 @@
   ];
 
   const waLink = (num, text) => `https://wa.me/${num}?text=${encodeURIComponent(text)}`;
+  const numberFor = name => CFG.numbers?.[name] || CFG.postNumber;
   const joinLink = name => CFG.groups?.[name]
-    || waLink(CFG.postNumber, `Hi! Please add me to the ${name} JobGroup.`);
+    || waLink(numberFor(name), `Hi! Please add me to the ${name} JobGroup.`);
 
   // ---------- marquee ----------
   const mq = $("#marquee");
@@ -86,7 +87,7 @@
     e.preventDefault();
     const url = CFG.groups?.[fState.value]
       ? CFG.groups[fState.value]            // group invite links can't prefill text
-      : waLink(CFG.postNumber, message());
+      : waLink(numberFor(fState.value), message());
     window.open(url, "_blank", "noopener");
   });
 
